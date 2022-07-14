@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --background-color: rgb(180, 27, 53);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    scroll-behavior: smooth;
+
+
+
+}
+#navmenu ul li a:hover{
+    color:red;
+    background-color: white;
+    transition: all 0.3s ease;
+    padding: 0 1rem;
+    border-radius: 5px;
+    
+}
+#toggle {
+    display: none;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    z-index: 11;
+    height: 100px;
+
+}
+
+#logo img {
+    height: 8rem;
+}
+
+/* .navbar{
+    height: 100px;
+} */
+.navbar ul {
+    display: flex;
+
+
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    font-size: 3rem;
+    padding: .5rem 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+
+}
+
+.navbar ul li a:hover {
+    color: #80aaff;
+}
+
+
+.home_section::before {
+
+    content: "";
+
+    background: url(./images/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    
+
+}
+
+.home_section {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20rem;
+
+}
+
+.home_section h1 {
+    font-size: 6rem;
+    padding: 0 0 3rem 0;
+    color: white;
+}
+
+.home_section p {
+    font-size: 2rem;
+    border: 2px solid red;
+    padding: 0 15rem;
+    line-height: 32px;
+    color: white;
+
+
+
+}
+
+.home_section button {
+    margin: 3rem;
+    padding: 1.5rem 4rem;
+    background: #c157c5;
+    /* border: 2px solid rgb(255, 187, 0) ; */
+    border: none;
+    border-radius: 5px;
+}
+
+.home_section button:hover {
+    background-color: #e3479a;
+}
+
+.home_section button a {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+
+
+}
+
+
+
+
+
+#our_service {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#image_box_parent {
+    display: flex;
+    /* border: 2px solid red; */
+    margin: 3.4rem;
+}
+
+
+.image_box {
+    border: 3px solid darkorchid;
+    margin: 0 5rem;
+    padding: 5rem;
+    background: rgb(255, 200, 236);
+    border-radius: 2rem;
+}
+
+.image_box h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.image_box p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.second_section img {
+    display: block;
+    height: 150px;
+    margin: auto;
+
+}
+
+.third_section {
+    position: relative;
+    width: 100%;
+
+}
+
+.third_section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: .5;
+    
+}
+
+.third_section .about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 800px; */
+    border: 2px solid red;
+    padding: 25rem;
+
+}
+
+.about_us h2 {
+    font-size: 5rem;
+    padding: 2rem 0;
+
+}
+
+.about_us p {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    line-height: 3.5rem;
+}
+
+#contact_us::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(./images/contact.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: .5;
+}
+
+#contact_us {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.form input {
+    width: 25%;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.6rem;
+    box-shadow: 2px 2px 4px black;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+
+.form h2 {
+    font-size: 3rem;
+    color: green;
+    text-transform: uppercase;
+}
+
+#btn_submit {
+    width: 10%;
+    background-color: #c157c5;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 3rem 0;
+}
+
+.footer p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#check {
+    display: none;
+}
+
+
+/* responsive */
+@media(max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+
+    .navbar #toggle {
+        color: white;
+        display: block;
+        font-size: 3.2rem;
+    }
+
+    /* #check:checked{
+        transform: rotate(180deg);
+    } */
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 100px;
+        left: -110%;
+        background-color: green;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~#toggle i::before {
+        content: "\f00d"
+    }
+
+
+
+
+    #image_box_parent {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .image_box {
+        margin: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .home_section {
+        padding: 0 1rem;
+    }
+
+    .home_section p {
+        padding: 0;
+    }
+
+    .third_section {
+        margin-top: 2.5rem;
+    }
+
+    .third_section .about_us {
+        padding: 1rem;
+    }
+
+    .form input {
+        width: 90%;
+    }
+
+    #btn_submit {
+        width: 50%;
+    }
+}
+
+@media(max-width:300px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media(max-width:1191px) and (min-width:769px) {
+    html {
+        font-size: 58%;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    #navmenu ul {
+        display: none;
+    }
+
+    .home_section {
+        padding: 0;
+    }
+
+    #image_box_parent {
+        margin: 1.4rem;
+
+    }
+
+    .image_box {
+        margin: 0 1rem;
+        padding: 3rem;
+    }
+
+    .third_section .about_us {
+        padding: 2rem;
+    }
+
+    .form input {
+        width: 42%;
+    }
+}
